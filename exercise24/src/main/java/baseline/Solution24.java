@@ -23,7 +23,7 @@ public class Solution24 {
         }
     }
 
-    static boolean checkAnagram(String word1, String word2) {
+    private static boolean checkAnagram(String word1, String word2) {
         boolean isAnagram = true;
         if (word1.length() != word2.length()) {
             isAnagram = false;
@@ -37,7 +37,7 @@ public class Solution24 {
         isAnagram = word1.equals(word2);
         return isAnagram;
     }
-    public static String makeLowCase(String word) {
+    private static String makeLowCase(String word) {
         char c = 0;
         int len = word.length();
         StringBuffer strBuffer = new StringBuffer(len);
@@ -52,7 +52,7 @@ public class Solution24 {
         return strBuffer.toString();
     }
 
-    public static char sort(String word){
+    private static char sort(String word){
         char arr[] = word.toCharArray();
         char temp = 0;
 
