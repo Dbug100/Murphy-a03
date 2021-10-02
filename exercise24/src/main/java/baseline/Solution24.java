@@ -13,7 +13,7 @@ public class Solution24 {
         System.out.print("Enter the second string: ");
         String word2 = userIn.nextLine();
 
-        boolean anagram = checkAnagram(word1, word2);
+        boolean anagram = isAnagram(word1, word2);
 
         if(anagram){
             System.out.print("\""+word1+"\" and \""+word2 +"\" are anagrams" );
@@ -23,19 +23,19 @@ public class Solution24 {
         }
     }
 
-    private static boolean checkAnagram(String word1, String word2) {
-        boolean isAnagram = true;
+    private static boolean isAnagram(String word1, String word2) {
+        boolean anagram = true;
         if (word1.length() != word2.length()) {
-            isAnagram = false;
-            return isAnagram;
+            anagram = false;
+            return anagram;
         }
 
         word1 = makeLowCase(word1);
         word2 = makeLowCase(word2);
         word1 = String.valueOf(sort(word1));
         word2 = String.valueOf(sort(word2));
-        isAnagram = word1.equals(word2);
-        return isAnagram;
+        anagram = word1.equals(word2);
+        return anagram;
     }
     private static String makeLowCase(String word) {
         char c = 0;
