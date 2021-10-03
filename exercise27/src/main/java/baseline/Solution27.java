@@ -46,7 +46,7 @@ public class Solution27 {
 
     private static boolean zip(String zCode){
         //if zip length != 5 false else true
-        char c = 0;
+        char c ;
         for (int i = 0; i < zCode.length(); i++) {
             c = zCode.charAt(i);
             if (Character.isUpperCase(c)) {
