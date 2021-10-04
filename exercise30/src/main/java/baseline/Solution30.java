@@ -1,5 +1,8 @@
 package baseline;
-
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solution
+ *  Copyright 2021 Deaja Murphy
+ */
 public class Solution30 {
     public static void main(String[] args){
         //nested for loop both 1 <= 12
