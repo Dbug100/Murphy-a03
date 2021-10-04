@@ -15,10 +15,10 @@ public class Solution35 {
         //while loop
         while (true){
             //ask to enter name
-            System.out.println("Enter a name: ");
+            System.out.print("Enter a name: ");
             String nameIn = userIn.nextLine();
             //accept name until blank entry
-            if(nameIn.isBlank() || nameIn.isEmpty())
+            if(nameIn.isBlank() && nameIn.isEmpty())
                 break; //exit loop at blank entry
             else
                 names.add(nameIn);
